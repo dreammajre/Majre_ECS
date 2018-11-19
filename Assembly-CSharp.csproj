@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F662E1EF-5496-94BC-8FB7-E6F519C5C465}</ProjectGuid>
+    <ProjectGuid>{C33C8B56-C614-2FAA-36B0-C013B897BC99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -77,97 +77,97 @@
     <Compile Include="Assets\Script\System\SpawnRandomCircleSystem.cs" />
     <Compile Include="Assets\Script\Utility\MathUtility.cs" />
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Properties">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Properties.Codegen">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Properties.Codegen.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Properties.Codegen.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Jobs">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Jobs.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Properties">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.Hybrid">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Properties.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Properties.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Properties.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Hybrid">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Transforms">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Transforms.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Triangle.Runtime">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.2D.Triangle.Runtime.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Transforms.Hybrid">
-      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
+      <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
