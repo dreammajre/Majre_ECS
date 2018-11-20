@@ -28,20 +28,19 @@ public class CreatCubeSystem : ComponentSystem
             var spawner = cubeGroup.CreateCube[0];
             var sourceEntity = cubeGroup.Entity[0];
             var center = cubeGroup.Position[0].Value;
-
+            
             var entities = new NativeArray<Entity>(spawner.count, Allocator.Temp);
-            EntityManager.Instantiate(spawner.cube, entities);
-            var pos = new NativeArray<int3>(spawner.count, Allocator.Temp);
-           
+            EntityManager.Instantiate(spawner.cube, entities); 
+            var pos = new NativeArray<float3>(spawner.count, Allocator.Temp);
             setPos(ref pos);
             //使用for循环
             for (int j = 0; j < spawner.count; j++)
             {
                 EntityManager.SetComponentData(entities[j], new Position { Value = pos[j] });
-                EntityManager.SetComponentData(entities[j], new Scale { Value = new float3(1, 0.1f, 1) });
+                EntityManager.SetComponentData(entities[j], new Scale { Value = new float3(1, 1f, 1) });
                 EntityManager.AddSharedComponentData(entities[j], new MeshInstanceRenderer
-                {
-                   material = spawner.materials[UnityEngine.Random.Range(1,spawner.materials.Count)],
+                {                   
+                    material = spawner.materials[UnityEngine.Random.Range(1,spawner.materials.Count)],
                     mesh = spawner.mesh
                 });
             }
@@ -49,7 +48,7 @@ public class CreatCubeSystem : ComponentSystem
             pos.Dispose();
             EntityManager.RemoveComponent<CreateCube>(sourceEntity);
             UpdateInjectedComponentGroups();
-        }
+        }     
         #region
         // 使用while循环
 
@@ -66,19 +65,27 @@ public class CreatCubeSystem : ComponentSystem
             //UpdateInjectedComponentGroups();
         }
         #endregion
+        
     }
+
+    /*
+     
+      
+         */
+
+
     //获取位置
-    void setPos(ref NativeArray<int3> pos)
+    void setPos(ref NativeArray<float3> pos)
     {
         var count = pos.Length;
-        var poss = new int3(0, 0, 0);
+        var poss = new float3(0, 0, 0);
         int x = 0;
         var data = math.sqrt(count);
         for (int i = 0; i < data; i++)
         {
             for (int j = 0; j < data; j++)
             {
-                pos[x] = new int3(j * 1,0,i * 1);
+                pos[x] = new float3(j * 1f,0,i * 1f);
                 x++;
             }
         }

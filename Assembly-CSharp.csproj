@@ -67,9 +67,11 @@
     <Compile Include="Assets\Script\CommPonet\RotationSpeedComponent.cs" />
     <Compile Include="Assets\Script\CommPonet\RotationSpeedResetSphereComponent.cs" />
     <Compile Include="Assets\Script\CommPonet\SpawnRandomCircleComponent.cs" />
+    <Compile Include="Assets\Script\JarECS\AbsBehaviour.cs" />
     <Compile Include="Assets\Script\JarECS\CreatCubeComponent.cs" />
     <Compile Include="Assets\Script\JarECS\CreatCubeSystem.cs" />
     <Compile Include="Assets\Script\JarECS\CreateCubeNotEcs.cs" />
+    <Compile Include="Assets\Script\JarECS\CreateMap.cs" />
     <Compile Include="Assets\Script\System\MoveAlongCircleSystem.cs" />
     <Compile Include="Assets\Script\System\RotationAccelerationSystem.cs" />
     <Compile Include="Assets\Script\System\RotationSpeedResetSphereSystem.cs" />
