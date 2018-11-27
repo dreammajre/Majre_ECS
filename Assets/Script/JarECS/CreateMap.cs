@@ -24,8 +24,7 @@ public class CreateMap : AbsBehaviour<CreateMap> {
         offsetX = Random.Range(0, 99999);
         offsetY = Random.Range(0, 99999);
         CreateCubeNotEcs.hightMap = GenerateHeightMap();
-
-
+        CreateCube.texture = GenerateHeightMap();
     }
 
     public Texture2D GenerateHeightMap() {

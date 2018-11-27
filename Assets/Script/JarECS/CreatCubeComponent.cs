@@ -17,6 +17,7 @@ public struct CreateCube:ISharedComponentData{
     public int count;
     [Header("MaterialList Info")]
     public List<Material> materials;
+    public static Texture2D texture;
 }
 
 

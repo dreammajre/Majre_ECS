@@ -102,11 +102,11 @@ public class CreateCubeNotEcs : MonoBehaviour {
                     }
                     if (!airChecker)
                     {
-                        Entity entitys = entityManager.CreateEntity(entityArchetype);
+                        Entity entitys = entityManager.CreateEntity(entityArchetype);                        
                         entityManager.SetComponentData(entitys, new Position { Value = new int3(x, y, z) });
                         entityManager.AddSharedComponentData(entitys, new MeshInstanceRenderer {
                             mesh = mesh,
-                            material = maTemp
+                            material = maTemp                            
                         });
                     }
                 }

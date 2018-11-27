@@ -1,3 +1,53 @@
 # Majre_ECS
 ECS工程
 这是我第一次使用GitHub Hello GitHub
+
+
+来自API翻译
+NativeContainer是托管值类型，为本机内存提供相对安全的C＃包装器。它包含指向非托管分配的指针。与Unity C＃作业系统一起使用时，a NativeContainer允许作业访问与主线程共享的数据，而不是使用副本。
+有哪些类型的NativeContainer？
+
+Unity附带一个NativeContainer名为NativeArray的程序。您还可以NativeArray使用NativeSlice操作a 以获取NativeArray从特定位置到特定长度的子集。
+
+注意：实体组件系统（ECS）包扩展了Unity.Collections命名空间以包括其他类型的NativeContainer：
+
+NativeList- 可调整大小NativeArray。
+NativeHashMap - 键和值对。
+NativeMultiHashMap - 每个键有多个值。
+NativeQueue- 先进先出（FIFO）队列。
+
+NativeContainer和安全系统
+
+安全系统内置于所有NativeContainer类型。它跟踪正在阅读和写入的内容NativeContainer。
+
+注意：所有NativeContainer类型的安全检查（例如越界检查，重新分配检查和竞争条件检查）仅在Unity 编辑器和播放模式下可用。
+
+该安全系统的一部分是DisposeSentinel和AtomicSafetyHandle。该DisposeSentinel检测内存泄漏，给你一个错误，如果你没有正确地释放你的记忆。泄漏发生后很久就会发生内存泄漏错误。
+
+使用AtomicSafetyHandle转移NativeContainer代码的所有权。例如，如果两个预定作业写入相同NativeArray，则安全系统会抛出一个异常，并显示一条明确的错误消息，说明解决问题的原因和方法。安排违规工作时，安全系统会抛出此异常。
+
+在这种情况下，您可以安排具有依赖关系的作业。第一个作业可以写入NativeContainer，一旦完成执行，下一个作业就可以安全地读取和写入相同的作业NativeContainer。从主线程访问数据时，读写限制也适用。安全系统允许多个作业并行读取相同的数据。
+
+默认情况下，当作业有权访问a时NativeContainer，它具有读写访问权限。此配置可能会降低性能。C＃作业系统不允许您安排与写入其中的NativeContainer另一个作业同时具有写入权限的作业。
+
+如果作业不需要写入a NativeContainer，请NativeContainer使用[ReadOnly]属性标记，如下所示：
+
+[ReadOnly]
+public NativeArray<int> input;
+在上面的示例中，您可以与其他对第一个也具有只读访问权限的作业同时执行作业NativeArray。
+
+注意：无法防止从作业中访问静态数据。访问静态数据会绕过所有安全系统，并可能导致Unity崩溃。有关更多信息，请参阅C＃作业系统提示和故障排除。
+
+NativeContainer分配器
+
+创建a时NativeContainer，必须指定所需的内存分配类型。分配类型取决于作业运行的时间长度。通过这种方式，您可以定制分配以在每种情况下获得最佳性能。
+
+内存分配和释放有三种分配器类型NativeContainer。在实例化你的时候需要指定合适的一个NativeContainer。
+
+Allocator.Temp分配最快。它适用于寿命为一帧或更少的分配。您不应该将NativeContainer分配Temp用于作业。您还需要Dispose在从方法调用返回之前调用该方法（例如MonoBehaviour.Update，或从本机代码到托管代码的任何其他回调）。
+Allocator.TempJob是一个比较慢的分配，Temp但速度比Persistent。它适用于四帧生命周期内的分配，并且是线程安全的。如果Dispose在四个帧内没有，则控制台会打印一个从本机代码生成的警告。大多数小型作业都使用此NativeContainer分配类型。
+Allocator.Persistent是最慢的分配，但只要你需要它，并且如果有必要，可以持续整个应用程序的生命周期。它是直接调用malloc的包装器。较长的作业可以使用此NativeContainer分配类型。你不应该Persistent在性能至关重要的地方使用。
+例如：
+
+NativeArray<float> result = new NativeArray<float>(1, Allocator.TempJob);
+注意：上例中的数字1表示的大小NativeArray。在这种情况下，它只有一个数组元素（因为它只存储一个数据result）。

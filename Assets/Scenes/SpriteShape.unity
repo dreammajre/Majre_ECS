@@ -125,13 +125,14 @@ GameObject:
   - component: {fileID: 282173679}
   - component: {fileID: 282173681}
   - component: {fileID: 282173682}
+  - component: {fileID: 282173683}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &282173678
 Transform:
   m_ObjectHideFlags: 0
@@ -160,7 +161,7 @@ MonoBehaviour:
     cube: {fileID: 1873853743658072, guid: a5f2d4e2a04e85d40a0bf43fa893e1b4, type: 2}
     mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     material: {fileID: 2100000, guid: 4a97420ed96c5ed4293ad3ad77088c60, type: 2}
-    count: 100
+    count: 64000
     materials:
     - {fileID: 2100000, guid: 1de170ffb983ecf41832c08d314ff450, type: 2}
     - {fileID: 2100000, guid: 152b204648b32a0499d8e447bf6f1317, type: 2}
@@ -211,6 +212,17 @@ MonoBehaviour:
       x: 0
       y: 0
       z: 0
+--- !u!114 &282173683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282173677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5879203ee05c074189cf876f79c224c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &383858726
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &383858727
 Transform:
   m_ObjectHideFlags: 0
