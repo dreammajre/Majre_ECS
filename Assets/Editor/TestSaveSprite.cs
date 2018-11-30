@@ -18,7 +18,7 @@ public class TestSaveSprite
         TextureImporter texImp = AssetImporter.GetAtPath(path) as TextureImporter;//获取图片入口
 
 
-        AssetDatabase.CreateFolder(rootPath, image.name);//创建文件夹
+        AssetDatabase.CreateFolder(rootPath, image.name);//创建文     件夹
 
 
         foreach (SpriteMetaData metaData in texImp.spritesheet)//遍历小图集
