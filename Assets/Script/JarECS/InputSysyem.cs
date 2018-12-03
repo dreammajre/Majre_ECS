@@ -14,12 +14,13 @@ public class InputSysyem : ComponentSystem
         public ComponentDataArray<PlayerComponent> PlayerCom;
         public ComponentDataArray<InputComponent> InputCom;
         public ComponentDataArray<VelocityComponent> VelocityCom;
+       
     }
 
     [Inject] InputGroup inputGroup;
 
     protected override void OnUpdate()
-    {
+    {        
         for (int i = 0; i < inputGroup.Length; i++)
         {
             float x = Input.GetAxis("Horizontal");

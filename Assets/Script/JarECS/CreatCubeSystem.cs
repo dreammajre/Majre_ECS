@@ -20,6 +20,7 @@ public class CreatCubeSystem : ComponentSystem
         public ComponentDataArray<Position> Position;
         public ComponentDataArray<Scale> scal;
         public readonly int Length;
+        
     }
     [Inject] CreateCubeGroup cubeGroup;
     protected override void OnUpdate()
