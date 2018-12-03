@@ -4,7 +4,9 @@ using Unity.Rendering;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
-
+/*
+ 计算输入数据的系统，然后将数据给接受输入的VelocityComponent
+     */
 public class InputSysyem : ComponentSystem
 {
     public struct InputGroup {

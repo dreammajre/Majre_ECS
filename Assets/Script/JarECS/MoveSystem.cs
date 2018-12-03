@@ -5,6 +5,9 @@ using Unity.Rendering;
 using Unity.Mathematics;
 using Unity.Transforms;
 
+/*
+ 移动系统
+     */
 public class MoveSystem : ComponentSystem
 {
 

@@ -6,6 +6,9 @@ using Unity.Transforms;
 using Unity.Mathematics;
 using Unity.Rendering;
 
+/*
+ 
+     */
 public class Bootstrap:MonoBehaviour {
 
     private static EntityManager entityManager;
@@ -21,14 +24,14 @@ public class Bootstrap:MonoBehaviour {
     }
     public void Start() {
         Entity player = entityManager.CreateEntity(entityArchetype);
+        entityManager.AddComponentData(player, new PlayerComponent());
+        entityManager.AddComponentData(player, new InputComponent());
+        entityManager.AddComponentData(player, new VelocityComponent());
         entityManager.SetComponentData(player, new Position { Value = new float3(0,0.5f,0) });
         entityManager.AddSharedComponentData(player, new MeshInstanceRenderer {
             mesh = mesh,
             material = material,
             castShadows = UnityEngine.Rendering.ShadowCastingMode.On
         });
-        entityManager.AddComponentData(player, new PlayerComponent());
-        entityManager.AddComponentData(player, new InputComponent());
-        entityManager.AddComponentData(player, new VelocityComponent());
     }
 }
