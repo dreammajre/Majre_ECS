@@ -68,15 +68,20 @@
     <Compile Include="Assets\Script\CommPonet\RotationSpeedResetSphereComponent.cs" />
     <Compile Include="Assets\Script\CommPonet\SpawnRandomCircleComponent.cs" />
     <Compile Include="Assets\Script\JarECS\AbsBehaviour.cs" />
+    <Compile Include="Assets\Script\JarECS\Bootstrap.cs" />
     <Compile Include="Assets\Script\JarECS\CreatCubeComponent.cs" />
     <Compile Include="Assets\Script\JarECS\CreatCubeSystem.cs" />
     <Compile Include="Assets\Script\JarECS\CreateCubeNotEcs.cs" />
     <Compile Include="Assets\Script\JarECS\CreateMap.cs" />
+    <Compile Include="Assets\Script\JarECS\DataComponent.cs" />
+    <Compile Include="Assets\Script\JarECS\InputSysyem.cs" />
+    <Compile Include="Assets\Script\JarECS\MoveSystem.cs" />
     <Compile Include="Assets\Script\System\MoveAlongCircleSystem.cs" />
     <Compile Include="Assets\Script\System\RotationAccelerationSystem.cs" />
     <Compile Include="Assets\Script\System\RotationSpeedResetSphereSystem.cs" />
     <Compile Include="Assets\Script\System\RotationSpeedSystem.cs" />
     <Compile Include="Assets\Script\System\SpawnRandomCircleSystem.cs" />
+    <Compile Include="Assets\Script\UIManager\UIManager.cs" />
     <Compile Include="Assets\Script\Utility\MathUtility.cs" />
     <Reference Include="Unity.2D.Animation.Runtime">
       <HintPath>E:/WorkApplication/MoMoUnity/ECS-Jar/Majre_ECS/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>

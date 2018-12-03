@@ -6,6 +6,7 @@ using Unity.Collections;
 using Unity.Mathematics;
 using Unity.Transforms;
 using Unity.Rendering;
+using UnityEngine.UI;
 
 //[UpdateBefore(typeof(Move))]//定义哪一个Sysytm在前面
 public class CreatCubeSystem : ComponentSystem
@@ -36,6 +37,7 @@ public class CreatCubeSystem : ComponentSystem
             //使用for循环
             for (int j = 0; j < spawner.count; j++)
             {
+               
                 EntityManager.SetComponentData(entities[j], new Position { Value = pos[j] });
                 EntityManager.SetComponentData(entities[j], new Scale { Value = new float3(1, 1f, 1) });
 
