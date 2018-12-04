@@ -7,6 +7,7 @@ using Unity.Transforms;
 using Unity.Mathematics;
 using Unity.Jobs;
 using Unity.Collections;
+using System;
 
 
 public class DataComponent { 
@@ -20,7 +21,9 @@ public struct PlayerComponent : IComponentData {
 public struct InputComponent : IComponentData {
 
 }
+
 //记录输入数据
+[Serializable]
 public struct VelocityComponent : IComponentData {
     public float3 moveVelicity;
 }
@@ -40,6 +43,22 @@ public struct MyJob1 : IJob {
     public NativeArray<float> result;
     public void Execute() {
         result[0] = result[0] + 1;
+    }
+}
+
+//对批量的数据进行操作
+
+public struct MyJobParallel : IJobParallelFor
+{
+    [ReadOnly]
+    public NativeArray<float> a;
+    [ReadOnly]
+    public NativeArray<float> b;
+    public NativeArray<float> result;
+
+    public void Execute(int i)
+    {
+        result[i] = a[i] + b[i];
     }
 }
 

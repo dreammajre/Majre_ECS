@@ -38,7 +38,40 @@ public class Bootstrap:MonoBehaviour {
         //StartCoroutine(Des(player));
 
 
+        #region 处理单个数据
+        //SigleData();
+        #endregion
 
+        #region 处理批量数据
+        //BulkData();
+        #endregion
+
+    }
+
+    public void BulkData() {
+        NativeArray<float> a = new NativeArray<float>(2, Allocator.TempJob);
+        NativeArray<float> b = new NativeArray<float>(2, Allocator.TempJob);
+        NativeArray<float> result = new NativeArray<float>(2, Allocator.TempJob);
+        a[0] = 10;
+        b[0] = 10;
+        a[1] = 10;
+        b[1] = 10;
+        var myJobParallel = new MyJobParallel();
+        myJobParallel.a = a;
+        myJobParallel.b = b;
+        myJobParallel.result = result;
+        //使用结果数组中的每个索引执行一次Execute并且每次处理过程只处理一个项目
+        JobHandle handle = myJobParallel.Schedule(result.Length, 1);
+        //等待作业完成
+        handle.Complete();
+        float results = result[0];
+        a.Dispose();
+        b.Dispose();
+        result.Dispose();
+        Debug.Log("获取的结果" + results);
+    }
+
+    public void SigleData() {
         NativeArray<float> result = new NativeArray<float>(1, Allocator.Temp);
         //设置工作数据
         MyJob myJob = new MyJob();
@@ -55,8 +88,7 @@ public class Bootstrap:MonoBehaviour {
         //NativeArray的所有副本指向同一个内存，我们可以访问NativeArray中的结果
         float results = result[0];
         result.Dispose();
-        Debug.Log("获取的结果"+results);
-        
+        Debug.Log("获取的结果" + results);
     }
 
     IEnumerator Des(Entity player) {
